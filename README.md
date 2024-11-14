@@ -9,12 +9,12 @@ The module has code to build an SMS text classification solution into a function
 SMS text classification is done via A linear Support Vector Classification (SVC) model.The above data is split into training and testing  dataframes based on a sampe split of 33%. 
 2 functions were created:
 
-** sms_classification - **
+### **sms_classification -**
 
 function performs SMS classification using a pipeline with TF-IDF vectorization and Linear Support Vector Classification.
 Parameters: sms_text_df (pd.DataFrame): DataFrame containing 'text_message' and 'label' columns for SMS classification. the function  returns 'text_clf' a Fitted pipeline model for SMS classification. This function takes a DataFrame with 'text_message' and 'label' columns, splits the data into training and testing sets, builds a pipeline with TF-IDF vectorization and Linear Support Vector Classification, and fits the model to the training data. The fitted pipeline is returned to make future predictions.
 
-** sms_prediction - **
+### **sms_prediction -**
 
 Function built to predict the classification of a new text by Creating a variable that will hold the prediction of a new text.
 Uses a conditional statement that determines if the text message is "ham" or “spam”.
